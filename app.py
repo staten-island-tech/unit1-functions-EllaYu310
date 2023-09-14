@@ -24,11 +24,23 @@ def triangle(x):
 triangle(200)
 done()
 
+def rectangle(x):
+    t.forward(100)
+    t.left(90)
+    t.forward(125)
+    t.left(90)
+    t.forward(100)
+    t.left(90)
+    t.forward(125)
+rectangle(450)
+done()
+
 def math(x,y):
     print(x + y)
 math(13,2)
+math(15,3)
 
 def message(input):
     print(input)
 message("Hello world!")
-message("Good bye")
+message("Goodbye")
