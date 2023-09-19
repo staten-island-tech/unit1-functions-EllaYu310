@@ -40,7 +40,6 @@ def square(x):
     t.left(90)
     t.forward(x)
 square(200)
-
 t.end_fill()
 
 turtle.done()
