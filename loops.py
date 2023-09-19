@@ -20,8 +20,6 @@ for i in range(1,60):
     t.right(95)
 turtle.done()
 
-sidelength = 100
-rotate = 90
 def square(x,y):
     for i in range(4):
         t.forward(x)
@@ -59,20 +57,25 @@ def addSquares(iRange):
 addSquares(5)
 turtle.done()
 
+#square spiral
+t.speed(100)
+length=5
+for i in range(60):
+    for x in range(4):
+        t.forward(length)
+        t.right(90)
+    t.right(5)
+    length+=5
 
-def addsquare(iRange):
-    length = 5
-    degree = 90
-    for i in range(iRange):
+turtle.done()
+
+#star spiral
+length=5
+for i in range(60):
+    for x in range(5):
         t.forward(length)
-        t.left(degree)
-        t.forward(length)
-        t.left(degree)
-        t.forward(length)
-        t.left(degree)
-        t.forward(length)
-        length = length + 5
-        degree = degree 
-addsquare(60)
+        t.right(144)
+    t.right(5)
+    length+=5
 
 turtle.done()
